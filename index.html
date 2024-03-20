@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/custom.css" rel="stylesheet">
+<meta name="description" content="Recomendador">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="CredHub">
+<link rel="icon" type="image/svg+xml" href="../img/logo.svg" />
+<link rel="shortcut icon" href="../img/logo.webp" />
+<title>credhub.online | Quiz</title>
+<meta property="og:title" content="credhub.online | Quiz" />
+<meta property="og:type" content="website" />
+<script defer data-domain="quiz.centraldin.com" src="https://analytics.centraldin.com/js/script.js"></script>
+
+<style>
+      .step {
+        display: none;
+      }
+
+      .active {
+        display: block;
+      }
+      
+      input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+</style>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N4Z786BC');</script>
+<!-- End Google Tag Manager -->
+
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11426880355"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11426880355');
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N4Z786BC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<main class="container">
+<div class="quiz" data-active-step="1">
+
+<div class="quiz-header">
+<div class="logo">
+<img class="logo-img2" src="../img/logo.webp" alt="logo">
+</div>
+<progress id="progress-bar" value="90" max="100"></progress>
+</div>
+
+
+<div class="quiz-body">
+<div class="step step-1 active">
+<h1 class="quiz-title">Encontre o melhor cartão para você. Responda as perguntas abaixo! ⤵</h1>
+<p class="time-lead"><img src="../img/fast-icon.svg" alt="30 segundos" /> Oferta por tempo limitado</p>
+<fieldset>
+<legend>Em qual grupo você se encaixa?</legend>
+<label>
+<input type="radio" name="pergunta_1" id="pergunta_1" value="Hasta $ 1.000">
+<span>Aposentado / Servidor Público</span>
+</label>
+<label>
+<input type="radio" name="pergunta_1" id="pergunta_1" value="Entre $ 1.001 y $ 2.000">
+<span>Autônomo / Carteira assinada</span>
+</label>
+<label>
+<input type="radio" name="pergunta_1" id="pergunta_1" value="Entre $ 2.001 y $ 3.999">
+<span>Desempregado</span>
+</label>
+<label>
+<input type="radio" name="pergunta_1" id="pergunta_1" value="Más de $ 4.000">
+<span>Estudante</span>
+</label>
+</fieldset>
+
+<input type="hidden" name="questions" value="3">
+</div>
+<div class="step step-2">
+<fieldset>
+<legend>Você está negativado?</legend>
+<label>
+<input type="radio" name="pergunta_2" id="pergunta_2" value="día-5">
+<span>Sim</span>
+</label>
+<label>
+<input type="radio" name="pergunta_2" id="pergunta_2" value="día-10">
+<span>Não</span>
+</label>
+</fieldset>
+
+
+<input type="hidden" name="questions" value="3">
+</div>
+
+<div class="step step-3 step-form">
+    
+   
+ <form id="myForm">
+     <fieldset>
+             <legend>Falta pouco para descobrir o resultado</legend>
+
+      <label style="font-weight: bold;" for="name">Insira seu nome:</label>
+      <input type="text" id="name" name="name" placeholder="Informe seu nome completo" required>
+<label style="font-weight: bold;" for="phone">Insira seu whatsapp:</label>
+      <input type="text" id="phone" name="phone" placeholder="(DDD) 00000-0000">
+
+      <label style="font-weight: bold;" f for="email">Insira seu email:</label>
+      <input type="email" id="email" name="email" placeholder="Seu melhor e-mail *" required>
+
+      <input  type="submit" value="VER MEU CARTÃO ➜">
+       </fieldset>
+    </form>
+  </div>
+</div>
+
+</div>
+</main>
+<footer class="quiz-footer">
+<div class="credits"><span>@ 2023</span></div>
+<div class="footer-nav"><a target="_blank" rel="noopener" href="https://extraduda.com/politica-privacidade/">Política de Privacidad</a></div>
+</footer>
+
+
+
+  <script>
+var steps = document.querySelectorAll('.step'); // Seleciona todos os elementos com a classe 'step'
+var totalSteps = steps.length; // Conta o número total de passos
+var currentStep = 0; // Define o passo inicial como 0
+
+// Função para mostrar o passo atual baseado no índice
+function showStep(stepIndex) {
+    steps.forEach(function(step, index) {
+        // Apenas o passo atual terá a classe 'active'
+        step.classList.toggle('active', index === stepIndex);
+    });
+}
+
+// Seleciona todos os botões de rádio
+var radioButtons = document.querySelectorAll('input[type="radio"]');
+radioButtons.forEach(function(radioButton) {
+    // Adiciona evento de mudança para cada botão de rádio
+    radioButton.addEventListener('change', function() {
+        if (currentStep < totalSteps - 1) {
+            currentStep++; // Avança para o próximo passo
+            showStep(currentStep); // Mostra o próximo passo
+        } else {
+            // Aqui pode ser implementado o código para o fim do quiz
+            console.log('Último passo alcançado');
+        }
+    });
+});
+
+// Inicialmente, mostra o primeiro passo
+showStep(currentStep);
+
+// Função para mostrar mensagem de carregamento
+function showLoadingMessage() {
+    var button = document.getElementById("submit-button");
+    if (!button) {
+        console.error('Botão de envio não encontrado!');
+        return;
+    }
+    button.innerHTML = "Carregando..."; // Ajuste na ortografia
+    button.disabled = true; // Desabilita o botão para prevenir múltiplos envios
+}
+</script>
+
+
+<script type="text/javascript" src="./js/form-random.js"></script>
+</body>
+</html>
