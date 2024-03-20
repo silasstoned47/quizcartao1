@@ -62,6 +62,6 @@ var randomIndex = Math.floor(Math.random() * urls.length);
 var randomUrl = urls[randomIndex];
 
 // Redirecionar para a URL escolhida com tags UTM
-window.location.href = randomUrl + utmForward;
+//window.location.href = randomUrl + utmForward;
 
 });
