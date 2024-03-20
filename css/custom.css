@@ -1,0 +1,356 @@
+/* General */
+body {
+    background-color: #EDF3FB;
+}
+
+body>footer,
+body>header,
+body>main {
+    padding: 0;
+    background-color: #EDF3FB;
+}
+
+.container .container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-inline: 1rem;
+}
+
+/* QUIZ */
+
+/* Quiz Header */
+.quiz {
+    margin: auto;
+}
+
+.quiz .quiz-header .logo {
+    /* background-color: #4551BF; */
+    padding: 1rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0;
+    font: 600 1.5rem/1.5rem "Montserrat", sans-serif;
+}
+
+.quiz .quiz-header .logo img {
+    max-width: 130px;
+    margin: auto auto;
+    display: block;
+}
+
+.logo-img {
+    transform: scale(1.2);
+}
+
+.quiz .time-lead {
+    color: #18bf66;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quiz .time-lead img {
+    width: 24px;
+    height: auto;
+}
+
+.quiz .quiz-title {
+    font-size: 24px;
+    font: system-ui;
+    font-weight: 700;
+    line-height: 2rem;
+    text-decoration: none solid rgb(40, 36, 71);
+    color: #2C3241;;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding: 1rem 0;
+    border-radius: 12px;
+}
+
+progress {
+    margin-inline: 1.5rem;
+    width: calc(100% - 3rem);
+    color: #4551BF;
+}
+
+#progress-bar {
+    margin-inline: 1.5rem;
+    width: calc(100% - 3rem);
+    color: #4551BF;
+}
+
+#progress-bar::-webkit-progress-value {
+    background-color: #4551BF;
+}
+
+#progress-bar::-moz-progress-bar {
+    background-color: #4551BF;
+}
+
+.quiz-body {
+    padding: 0 1.5rem;
+}
+
+/* New progress bar */
+.flex {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+}
+
+.progress-block {
+    background-color: #fff !important;
+    width: 3.5rem;
+    height: .25rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    flex-grow: 1;
+}
+
+.progress-block.bg-burple {
+    background-color: #4551BF !important;
+}
+
+/* Quiz Steps */
+
+.quiz .step {
+    display: none;
+    width: 100%;
+}
+
+.quiz .step.active {
+    display: block;
+}
+
+.quiz .step fieldset legend {
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.quiz .step:not(.step-form) fieldset label {
+    padding: .875rem 1.2rem;
+    cursor: pointer;
+    border: 1px solid #E4E9F2;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+}
+
+.quiz .step:not(.step-form) fieldset label:hover {
+    background-color: #edf1f7;
+}
+
+.quiz .step:not(.step-form) fieldset label:focus-within {
+    border-color: #88B5E0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgb(51 148 222 / 25%);
+    box-shadow: 0 0 0 0.2rem rgb(51 148 222 / 25%);
+    color: #3394DE;
+    background-color: #edf1f7;
+}
+
+.quiz .step:not(.step-form) fieldset label span {
+    font-size: 17px;
+    line-height: 1.2em;
+}
+
+
+/* With Grid */
+
+.quiz .step fieldset .grid label {
+    margin-top: 10px;
+    padding: 0.435rem 0.6rem 0.975rem 0.6rem;
+}
+
+.quiz .step fieldset .grid {
+    grid-template-columns: repeat(auto-fit, minmax(0%, 1fr)) !important;
+}
+
+.quiz .step fieldset .grid label img {
+    height: 70px;
+    max-width: 90px;
+    margin-bottom: 20px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+.quiz .step fieldset .grid label span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* STEP FORM */
+
+.quiz .step.step-form h4 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.quiz .step.step-form h5 {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #18bf66;
+    font-size: 24px;
+}
+
+.quiz .step.step-form p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.quiz .step.step-form .terms {
+    font-size: 16px;
+}
+
+/* Footer */
+
+.quiz-footer {
+
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.quiz-footer .credits {
+    padding: 1.125em 0.5em 0.1em 0.5em;
+    font-size: 13px;
+    text-align: center;
+}
+
+.quiz-footer .footer-nav a {
+    margin-top: 24px;
+    margin: 0 10px;
+    opacity: .6;
+    font-size: 12px;
+    color: #2C3241;
+}
+
+/* button */
+a[role=button], button, input[type=button], input[type=reset], input[type=submit] {
+    /* color: #black; */
+    color: #2C3241;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.875rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    color: #4551BF;
+    border-color: #4551BF;
+}
+
+button:focus {
+    outline: none;
+    border-color: #4551BF;
+    color: #fff;
+    background-color: #4551BF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.submit-button {
+    background-color: #4551BF;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.quiz-submit-title {
+    font-size: 24px;
+    font: system-ui;
+    font-weight: 700;
+    line-height: 2rem;
+    text-decoration: none solid rgb(40, 36, 71);
+    color: #2C3241;;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    padding: 1rem 0;
+    border-radius: 12px;
+}
+
+.input-form {
+    background: #fff;
+    border-radius: 12px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+    .quiz .step fieldset legend {
+        font-size: 1em;
+    }
+
+    .quiz .time-lead {
+        font-size: 1rem;
+    }
+}
+
+/* Adicione estilos personalizados aqui */
+
+.has-text-align-center {
+    text-align: center;
+}
+
+.wp-block-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-block-button__link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wp-block-button__link:hover {
+    background-color: #255000;
+}
