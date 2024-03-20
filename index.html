@@ -69,54 +69,64 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 <div class="quiz-body">
-<div class="step step-1 active">
-<h1 class="quiz-title">Encontre o melhor cartão para você. Responda as perguntas abaixo! ⤵</h1>
-<p class="time-lead"><img src="../img/fast-icon.svg" alt="30 segundos" /> Oferta por tempo limitado</p>
-<fieldset>
-<legend>Em qual grupo você se encaixa?</legend>
-<label>
-<input type="radio" name="pergunta_1" id="pergunta_1" value="Hasta $ 1.000">
-<span>Aposentado / Servidor Público</span>
-</label>
-<label>
-<input type="radio" name="pergunta_1" id="pergunta_1" value="Entre $ 1.001 y $ 2.000">
-<span>Autônomo / Carteira assinada</span>
-</label>
-<label>
-<input type="radio" name="pergunta_1" id="pergunta_1" value="Entre $ 2.001 y $ 3.999">
-<span>Desempregado</span>
-</label>
-<label>
-<input type="radio" name="pergunta_1" id="pergunta_1" value="Más de $ 4.000">
-<span>Estudante</span>
-</label>
-</fieldset>
-
-<input type="hidden" name="questions" value="3">
-</div>
-<div class="step step-2">
-<fieldset>
-<legend>Você está negativado?</legend>
-<label>
-<input type="radio" name="pergunta_2" id="pergunta_2" value="día-5">
-<span>Sim</span>
-</label>
-<label>
-<input type="radio" name="pergunta_2" id="pergunta_2" value="día-10">
-<span>Não</span>
-</label>
-</fieldset>
-
-
-<input type="hidden" name="questions" value="3">
-</div>
-
-<div class="step step-3 step-form">
-    
-   
- <form id="myForm">
-     <fieldset>
-             <legend>Falta pouco para descobrir o resultado</legend>
+  <div class="step step-1 active">
+    <h1 class="quiz-title">Descubra qual cartão de crédito é adequado para você</h1>
+    <p class="time-lead"><img src="img/fast-icon.svg" alt="30 Segundos" /> Leva menos de 30 segundos!</p>
+    <fieldset>
+      <legend>O que é mais importante em um cartão de crédito para você?</legend>
+      <div class="grid">
+        <label>
+          <input type="radio" id="step-1-option-1" name="cartao-ideal" value="limite-alto">
+          <img src="img/high-credit.png" alt="">
+          <span>Limite de crédito alto</span>
+        </label>
+        <label>
+          <input type="radio" name="cartao-ideal" value="credito-imediato">
+          <img src="img/fast-credit.png" alt="">
+          <span>Crédito imediato</span>
+        </label>
+      </div>
+      <div class="grid">
+        <label>
+          <input type="radio" name="cartao-ideal" value="sem-consulta">
+          <img src="img/no-search.png" alt="">
+          <span>Sem verificação de crédito</span>
+        </label>
+        <label>
+          <input type="radio" name="cartao-ideal" value="anuidade-gratis">
+          <img src="img/free-card.png" alt="">
+          <span>Anuidade grátis</span>
+        </label>
+      </div>
+    </fieldset>
+    <input type="hidden" name="questions" value="3">
+  </div>
+  <div class="step step-2">
+    <fieldset>
+      <legend>Qual é a sua renda mensal?</legend>
+      <label>
+        <input type="radio" id="pergunta_2" name="pergunta_2" value="ate-1000">
+        <span>Até $ 3.000</span>
+      </label>
+      <label>
+        <input type="radio" id="pergunta_2" name="pergunta_2" value="1000-2000">
+        <span>Entre $ 3.000 e $ 6.000</span>
+      </label>
+      <label>
+        <input type="radio" id="pergunta_2" name="pergunta_2" value="2000-4000">
+        <span>Entre $ 6.000 e $ 9.000</span>
+      </label>
+      <label>
+        <input type="radio" id="pergunta_2" name="pergunta_2" value="acima-4000">
+        <span>Mais de $ 15.000</span>
+      </label>
+    </fieldset>
+    <input type="hidden" name="questions" value="3">
+  </div>
+  <div class="step step-3 step-form">
+    <form id="myForm">
+      <fieldset>
+       <legend>Falta pouco para descobrir o resultado</legend>
 
       <label style="font-weight: bold;" for="name">Insira seu nome:</label>
       <input type="text" id="name" name="name" placeholder="Informe seu nome completo" required>
@@ -127,8 +137,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <input type="email" id="email" name="email" placeholder="Seu melhor e-mail *" required>
 
       <input  type="submit" value="VER MEU CARTÃO ➜">
-       </fieldset>
+      </fieldset>
     </form>
+
   </div>
 </div>
 
