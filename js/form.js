@@ -25,7 +25,7 @@ document.getElementById('myForm').addEventListener('submit', function (e) {
 
     // Enviar dados para ActiveCampaign
     const xhr1 = new XMLHttpRequest();
-    xhr1.open('POST', 'https://quiz1-ivory.vercel.app/ac/ac-br.php', true);
+    xhr1.open('POST', 'https://n8n.squatrondigital.com/webhook-test/extradudapresmo', true);
     xhr1.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
     xhr1.onload = function () {
         if (xhr1.status === 200) {
